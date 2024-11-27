@@ -1,0 +1,177 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures the body takes full height */
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: magenta; /* Background color for header */
+    padding: 20px;
+    border-radius: 20px; /* Rounded corners for header */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #fff; /* White text color for header title */
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #f4f4f4; /* Light color for the header paragraph */
+}
+
+/* Main Section Styles */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.team-education {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Profile Styles */
+.education-profile {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-profile:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.education-profile img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.education-profile h2 {
+    font-size: 1.8rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.education-profile h3 {
+    font-size: 1.4rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.education-profile p {
+    font-size: 1rem;
+    color: black;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-education {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Back Button Styles */
+.back-button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.back-button .btn {
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button .btn:hover {
+    background-color: #155db5;
+}
+
+/* Links Styled as Magenta Buttons */
+a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: magenta;  /* Magenta background */
+    color: white;  /* White text */
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+/* Center the buttons inside the container */
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px; /* Add margin between buttons */
+}
+
+/* Button Hover Effect */
+a:hover {
+    background-color: #e20080;  /* Darker magenta for hover */
+    transform: translateY(-5px);
+    color: white;  /* Ensure text stays white */
+}
+
+a:active {
+    background-color: #ab006b;  /* Even darker magenta on click */
+    transform: translateY(0);
+}
+
+/* Align links horizontally at the bottom */
+footer {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    align-items: center;
+    gap: 20px; /* Space between buttons */
+    flex-wrap: wrap; /* Allow wrapping if screen is smaller */
+    margin-top: 40px;
+}
+
+a[href="groupwork.html"] {
+    margin-top: 40px;
+    font-size: 1.1rem;
+}
