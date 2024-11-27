@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mastingo.css">
+    <title>Meet Our Team - The Spartans</title>
+</head>
+<body>
+    <header>
+        <h1>Meet Our Team: The Spartans</h1>
+        <p>Our team is a mix of unique talents, skills, and experiences that drive innovation. Get to know each member below.</p>
+    </header>
+    
+    <main>
+        <section class="team-portraits">
+            <!-- Individual Team Member Profiles -->
+            <div class="portrait">
+                <img src="C:/Users/HP/Downloads/pexels-theshantanukr-16597261.jpg" alt="Ibrae Huqa">
+                <h2>Ibrae Huqa</h2>
+                <h3>Member ID: 672480</h3>
+                <p>Ibrae embraces teamwork and has a wealth of experience in his line of work. He thrives in challenging environments and contributes innovative ideas to the team.</p>
+
+                <!-- Links to Skills, Education, Projects, and Contact -->
+                <a href="skills.html#ibrae-skills">Skills</a> | <a href="education.html">Education</a> | <a href="#ibrae-projects">Projects</a> | <a href="#contact">Contact</a> |
+            </div>
+
+            <div class="portrait">
+                <img src="C:/Users/HP/Downloads/pexels-samad-ismayilov-231721-735552.jpg" alt="Asa Rapuro">
+                <h2>Asa Rapuro</h2>
+                <h3>Member ID: 669895</h3>
+                <p>Asa is the brain behind our innovative solutions. With a knack for problem-solving, Asa's leadership in project planning is invaluable.</p>
+                <a href="skills.html#asa-skills">Skills</a> | <a href="education.html">Education</a> | <a href="#asa-projects">Projects</a> | <a href="#contact">Contact</a> |
+            </div>
+
+            <div class="portrait">
+                <img src="C:/Users/HP/Downloads/pexels-pixabay-415829.jpg" alt="Shem Murithi">
+                <h2>Shem Murithi</h2>
+                <h3>Member ID: 668552</h3>
+                <p>Shem has creative ideas to solve problems and often brings fresh perspectives to the team. His out-of-the-box thinking is a great asset to our group.</p>
+                <a href="skills.html#shem-skills">Skills</a> | <a href="education.html">Education</a> | <a href="groupproject.html">Projects</a> | <a href="#contact">Contact</a> |
+            </div>
+
+            <div class="portrait">
+                <img src="C:/Users/HP/Downloads/pexels-hardeep-18557777.jpg" alt="Kelvin Munyingi">
+                <h2>Kelvin Munyingi</h2>
+                <h3>Member ID: 671384</h3>
+                <p>Kelvin is the glue that holds the team together. There's no other way to put it. His organizational skills and collaborative spirit make him an essential team player.</p>
+                <a href="skills.html#kelvin-skills">Skills</a> | <a href="education.html">Education</a> | <a href="groupproject.html">Projects</a> | <a href="#contact">Contact</a> |
+            </div>
+
+            <div class="portrait">
+                <img src="C:/Users/HP/Downloads/pexels-freddy-bagwell-917937915-22776161.jpg" alt="Khalid Hassan">
+                <h2>Khalid Hassan</h2>
+                <h3>Member ID: 672512</h3>
+                <p>Khalid is a prolific member of the team that seems to solve everyone's problems. His analytical skills and attention to detail have earned him recognition within the team.</p>
+                <a href="skills.html#khalid-skills">Skills</a> | <a href="education.html">Education</a> | <a href="groupproject.html">Projects</a> | <a href="#contact">Contact</a> |
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form" action="submit_form.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Chat Box Section -->
+        <section id="chat-box-section">
+            <h2>Chat with Us</h2>
+            <div class="chat-container">
+                <div class="chat-box" id="chat-box">
+                    <div class="bot-message">
+                        <p>Hello! How can I assist you today?</p>
+                    </div>
+                </div>
+                <div class="user-input">
+                    <input type="text" id="user-message" placeholder="Type a message..." />
+                    <button id="send-button">Send</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>A Spartans Creation</p>
+    </footer>
+
+    <script src="kahawa.js"></script>
+    <script src="chatbox.js"></script> <!-- Add the JavaScript for the chat box -->
+</body>
+</html>
